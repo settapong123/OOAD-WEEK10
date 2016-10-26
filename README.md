@@ -74,7 +74,24 @@ order -> Officer :displayResult()
 
 @enduml
 ```
-<img scr="http://www.plantuml.com/plantuml/img/SoWkIImgAStDuKfCBialKl1FIyjCJYtYue8o57Jj5FABKe0Cg_JK4Z0hCoyjNqEJ2o8Ab7OkBIx9puMgI2ujHfSFACfFAKqk0Kj3sPbv9IXAO9PPfMGM5-GaLWQb5fVcb01LS3cavgM0N0S0">
+<img src="http://www.plantuml.com/plantuml/img/SoWkIImgAStDuKfCBialKl1FIyjCJYtYue8o57Jj5FABKe0Cg_JK4Z0hCoyjNqEJ2o8Ab7OkBIx9puMgI2ujHfSFACfFAKqk0Kj3sPbv9IXAO9PPfMGM5-GaLWQb5fVcb01LS3cavgM0N0S0">
+
+```
+@startuml
+actor User
+User -> smartphone :open_app
+User -> smartphone :input_sound
+smartphone -> NodeMCU :[sendsound]open/close
+NodeMCU -> NodeMCU :checksmartphone
+NodeMCU -> Electronic :order Oper/Close Smartphone
+@enduml
+
+```
+
+<img src="http://www.plantuml.com/plantuml/img/RO-n2iCm34HtVuL-e6JFK0AXOzkXP2eb65cGK4SIblF_jGib7hfeq3sTxWRBFkLzYyvZbWIJKN9rmEaCjXLD5s62NfHuzgf_nPLrpxF9pi4r-qBT9D1rdA1_6d7u4gzgrM4K8_UJMn8NmlVXqZANI9YJy8ebK0ebo5qfTMFrWiTnCfHVjTC7">
+
+
+
 ผลที่ได้
 # Heading ระดับ 1 
 ## Heading ระดับ 2
